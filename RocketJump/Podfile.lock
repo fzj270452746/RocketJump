@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (5.11.2)
+  - AppsFlyerFramework (6.18.0):
+    - AppsFlyerFramework/Main (= 6.18.0)
+  - AppsFlyerFramework/Main (6.18.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AppsFlyerFramework
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppsFlyerFramework
+
+SPEC CHECKSUMS:
+  Alamofire: 400275dd1c6d87d95a041861d2a59da4b520a203
+  AppsFlyerFramework: c1e1e4cd3b98ffdca2fe32b17ae93909e409b6ab
+
+PODFILE CHECKSUM: 0d98ef1e08b9abcf8a3da4fe10ee15ed65ba40c8
+
+COCOAPODS: 1.16.2
