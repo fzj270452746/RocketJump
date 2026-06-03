@@ -25,7 +25,12 @@ final class Beacon<Payload> {
         for sink in sinks.values { sink(payload) }
     }
 
+    // @inline(never): workaround for Swift 6.3.2 EarlyPerfInliner crash on
+    // generic deinit with function-typed stored properties (rdar://compiler-bug).
+    @inline(never)
     func silence() { sinks.removeAll() }
+
+    deinit { silence() }
 }
 
 /// Lifetime handle for a listener. Keep it alive to keep listening.
